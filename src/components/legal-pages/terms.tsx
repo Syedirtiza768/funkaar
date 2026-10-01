@@ -58,22 +58,26 @@ const Terms = () => {
           first time and we will start sending texts again.
         </li>
         <li>
-          <strong>Help:</strong> Reply <strong>HELP</strong> to {sms}, or email{" "}
-          <a href={`mailto:${company.email}`}>{company.email}</a>.
+          <strong>Help:</strong> If you are experiencing issues with the
+          messaging program, you can reply with the keyword{" "}
+          <strong>HELP</strong> for more assistance, or you can get help
+          directly at <a href={`mailto:${company.email}`}>{company.email}</a>.
         </li>
         <li>
-          <strong>Frequency:</strong> Message frequency varies.
-        </li>
-        <li>
-          <strong>Cost:</strong> Message and data rates may apply.
+          <strong>Frequency and cost:</strong> As always, message and data rates
+          may apply for any messages sent to you from us and to us from you. You
+          will receive messages as needed in connection with your appointments,
+          bookings, and support requests, so message frequency varies. If you
+          have any questions about your text plan or data plan, it is best to
+          contact your wireless provider.
         </li>
         <li>
           <strong>Carriers:</strong> Carriers and wireless providers are not
           liable for delayed or undelivered messages.
         </li>
         <li>
-          <strong>Privacy:</strong> How we handle your information is described
-          in our <Link href="/privacy-policy">Privacy Policy</Link>.
+          <strong>Privacy:</strong> If you have any questions regarding privacy,
+          please read our <Link href="/privacy-policy">Privacy Policy</Link>.
         </li>
       </ul>
 
