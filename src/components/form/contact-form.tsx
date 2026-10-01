@@ -5,6 +5,7 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
+import Link from 'next/link';
 import ErrorMsg from '../error-msg';
 
 // Define FormData type
@@ -17,6 +18,7 @@ type FormData = {
   message: string;
   projectType?: string;
   referralSource: string;
+  smsConsent?: boolean;
 };
 
 // Validation schema using Yup
@@ -29,6 +31,7 @@ const schema = yup.object().shape({
   message: yup.string().required('Message is required'),
   projectType: yup.string().optional(),
   referralSource: yup.string().required('This field is required'),
+  smsConsent: yup.boolean().optional(),
 });
 
 // prop type
@@ -178,6 +181,26 @@ export default function ContactForm({ btnCls = '' }: IProps) {
         <ErrorMsg msg={errors.referralSource?.message!} />
       </div>
 
+
+      {/* SMS consent (optional, unchecked by default) */}
+      <div className="cn-contactform-input mb-25">
+        <label className="text-white" style={{ display: 'flex', gap: 12, alignItems: 'flex-start', fontSize: 14, lineHeight: 1.6, cursor: 'pointer' }}>
+          <input
+            {...register('smsConsent')}
+            type="checkbox"
+            style={{ marginTop: 5, width: 18, height: 18, flexShrink: 0 }}
+          />
+          <span>
+            I consent to receive non-marketing text messages from FUNKAAR LLC about appointment
+            reminders, consultation bookings, and customer support inquiries. Message frequency may
+            vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.
+            Consent is not a condition of purchase. See our{' '}
+            <Link href="/privacy-policy" style={{ textDecoration: 'underline' }}>Privacy Policy</Link>{' '}
+            and{' '}
+            <Link href="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms &amp; Conditions</Link>.
+          </span>
+        </label>
+      </div>
 
       <div className="cn-contactform-btn">
         <button className={`tp-btn-black-md ${btnCls} w-100`} type="submit" disabled={isSubmitting}>
