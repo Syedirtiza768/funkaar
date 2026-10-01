@@ -6,8 +6,10 @@ import { footerOneAnimation } from "@/utils/footer-anim";
 import { FaYoutube, FaInstagram, FaVimeo, FaLinkedin } from "react-icons/fa";
 
 const footer_links = [
-  { link: "/not found", title: "Blog" },
+  { link: "/blog", title: "Blog" },
   { link: "/contact", title: "Contact" },
+  { link: "/privacy-policy", title: "Privacy Policy" },
+  { link: "/terms-and-conditions", title: "Terms & Conditions" },
 ];
 
 export default function FooterOne() {

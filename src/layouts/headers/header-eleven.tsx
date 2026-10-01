@@ -2,14 +2,11 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Cart, MenuThree } from "@/components/svg";
 import HeaderMenus from "./header-menus";
 import useSticky from "@/hooks/use-sticky";
 import logo from "@/assets/img/logo/logo.png";
 import logo_2 from "@/assets/img/logo/logo-white.png";
-import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
-import { Search } from "lucide-react";
 // prop type 
 type IProps = {
   transparent?: boolean;
@@ -17,7 +14,6 @@ type IProps = {
 }
 export default function HeaderEleven({ transparent = false, cls = '' }: IProps) {
   const { sticky, headerRef, headerFullWidth } = useSticky();
-  const [openCartMini, setOpenCartMini] = React.useState(false);
   const [openOffCanvas, setOpenOffCanvas] = React.useState(false);
   useEffect(() => {
     headerFullWidth();
@@ -80,10 +76,6 @@ export default function HeaderEleven({ transparent = false, cls = '' }: IProps) 
           </div>
         </div>
       </header>
-
-      {/* cart mini */}
-      <CartOffcanvas openCartMini={openCartMini} setOpenCartMini={setOpenCartMini} />
-      {/* cart mini */}
 
       {/* off canvas */}
       <MobileOffcanvas openOffcanvas={openOffCanvas} setOpenOffcanvas={setOpenOffCanvas} />

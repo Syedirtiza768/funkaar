@@ -1,0 +1,90 @@
+.page {
+  background: #0b0b0c;
+  color: rgba(255, 255, 255, 0.82);
+  min-height: 100vh;
+  padding: 190px 0 110px;
+}
+
+.doc {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+  margin-bottom: 14px;
+}
+
+.title {
+  font-family: var(--tp-ff-heading), sans-serif;
+  color: #fff;
+  font-size: clamp(38px, 6vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
+
+.updated {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.doc h2 {
+  font-family: var(--tp-ff-heading), sans-serif;
+  color: #fff;
+  font-size: 26px;
+  line-height: 1.2;
+  margin: 46px 0 16px;
+}
+
+.doc p,
+.doc li {
+  font-size: 17px;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.doc p {
+  margin-bottom: 16px;
+}
+
+.doc ul {
+  padding-left: 22px;
+  margin-bottom: 18px;
+}
+
+.doc li {
+  margin-bottom: 8px;
+}
+
+.doc a {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.doc strong {
+  color: #fff;
+}
+
+.callout {
+  border-left: 3px solid rgba(255, 255, 255, 0.5);
+  padding: 4px 0 4px 20px;
+  margin: 22px 0;
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 140px 0 80px;
+  }
+  .doc p,
+  .doc li {
+    font-size: 16px;
+  }
+}
