@@ -59,7 +59,7 @@ const Terms = () => {
           <a href={`mailto:${company.email}`}>{company.email}</a>.
         </li>
         <li>
-          <strong>Frequency:</strong> Message frequency may vary.
+          <strong>Frequency:</strong> Message frequency varies.
         </li>
         <li>
           <strong>Cost:</strong> Message and data rates may apply.

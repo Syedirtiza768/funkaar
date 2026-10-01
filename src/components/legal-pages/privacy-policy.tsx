@@ -62,7 +62,7 @@ const PrivacyPolicy = () => {
         conversations. Consent to receive text messages is optional and is not
         a condition of buying any service from us. You can opt out at any time
         by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for
-        help. Message frequency may vary, and message and data rates may apply.
+        help. Message frequency varies, and message and data rates may apply.
         See our <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>{" "}
         for full messaging terms.
       </p>
