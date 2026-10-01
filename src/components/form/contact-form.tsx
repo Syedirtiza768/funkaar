@@ -11,7 +11,7 @@ import ErrorMsg from '../error-msg';
 type FormData = {
   name: string;
   email: string;
-  phone: string;
+  phone?: string;
   organization: string;
   website?: string;
   message: string;
@@ -23,7 +23,7 @@ type FormData = {
 const schema = yup.object().shape({
   name: yup.string().required('Name is required'),
   email: yup.string().email('Invalid email').required('Email is required'),
-  phone: yup.string().required('Phone number is required'),
+  phone: yup.string().optional(),
   organization: yup.string().required('Organization is required'),
   website: yup.string().optional(),
   message: yup.string().required('Message is required'),
@@ -93,7 +93,7 @@ export default function ContactForm({ btnCls = '' }: IProps) {
 
       {/* Phone */}
       <div className="cn-contactform-input mb-25">
-        <label className='text-white mb-2'>Phone Number*</label>
+        <label className='text-white mb-2'>Phone Number</label>
         <input
           {...register('phone')}
           type="tel"
