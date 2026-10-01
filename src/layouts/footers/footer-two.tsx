@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/img/logo/logo-white.png";
 import logo_2 from "@/assets/img/logo/logo.png";
-import { RightArrow } from "@/components/svg";
 
 // prop type
 type IProps = {
@@ -25,18 +24,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
               <div className="tp-footer-2-widget footer-col-2-1">
                 {!whiteFooter && (
                   <Link href="/">
-                  <span
-                    style={{
-                      color: '#fff',
-                      fontSize: '36px',
-                      fontWeight: 'bold',
-                      fontFamily: "'Playfair Display', serif",
-                      letterSpacing: '-1px',
-                      display: 'inline-block',
-                    }}
-                  >
-                    Funkaar
-                  </span>
+                  <Image src={logo} alt="Funkaar" style={{ width: "180px", height: "auto" }} />
                 </Link>
                 )}
                 {whiteFooter && (
@@ -64,6 +52,8 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                     <li><a href="/">Home</a></li>
                     <li><a href="/about-us">About Us</a></li>
                     <li> <a href="/work">Work</a></li>
+                    <li><a href="/service">Services</a></li>
+                    <li><a href="/blog">Blog</a></li>
                     <li><a href="/contact">Contact</a></li>
                   </ul>
                 </div>
@@ -84,7 +74,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 </div> */}
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    {/* <a href="tel:+1 771-777-4887">P: +1 771-777-4887</a> */}
+                    {/* <a href="tel:+1 771-232-9950">P: +1 771-232-9950</a> */}
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
@@ -96,18 +86,12 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
             </div>
             <div className="col-xl-4 col-lg-5 col-md-6 mb-50">
               <div className="tp-footer-2-widget footer-col-2-4">
-                <div className="tp-footer-2-widget-newslatter">
-                  <h4 className="tp-footer-2-widget-title">
-                    Subscribe to our newsletter
-                  </h4>
-                  <form action="#">
-                    <div className="tp-footer-2-input p-relative">
-                      <input type="text" placeholder="Enter your email..." />
-                      <button>
-                        <RightArrow clr={whiteFooter?"currentcolor":'#F3F3F4'}/>
-                      </button>
-                    </div>
-                  </form>
+                <div className="tp-footer-2-widget-menu">
+                  <h4 className="tp-footer-2-widget-title">Legal</h4>
+                  <ul>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                    <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
+                  </ul>
                 </div>
               </div>
             </div>

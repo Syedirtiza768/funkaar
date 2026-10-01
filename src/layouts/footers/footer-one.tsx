@@ -1,13 +1,17 @@
 "use client";
 import React, { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import logo_white from "@/assets/img/logo/logo-white.png";
 import Head from "next/head";
 import { footerOneAnimation } from "@/utils/footer-anim";
 import { FaYoutube, FaInstagram, FaVimeo, FaLinkedin } from "react-icons/fa";
 
 const footer_links = [
-  { link: "/not found", title: "Blog" },
+  { link: "/blog", title: "Blog" },
   { link: "/contact", title: "Contact" },
+  { link: "/privacy-policy", title: "Privacy Policy" },
+  { link: "/terms-and-conditions", title: "Terms & Conditions" },
 ];
 
 export default function FooterOne() {
@@ -68,10 +72,10 @@ export default function FooterOne() {
                     </p>
                     <p>
                       <a
-                        href="tel:+17717774887"
+                        href="tel:+17712329950"
                         className="text-white text-decoration-none"
                       >
-                        P: +1 771-777-4887
+                        P: +1 771-232-9950
                       </a>
                     </p>
                   </div>
@@ -122,17 +126,7 @@ export default function FooterOne() {
             <div className="row pt-4 mt-4 border-top border-secondary">
               <div className="col-md-12 text-start">
                 <Link href="/">
-                  <span
-                    style={{
-                      color: "#fff",
-                      fontSize: "36px",
-                      fontWeight: "bold",
-                      fontFamily: "'Playfair Display', serif",
-                      letterSpacing: "-1px",
-                    }}
-                  >
-                    Funkaar
-                  </span>
+                  <Image src={logo_white} alt="Funkaar" style={{ width: "190px", height: "auto" }} />
                 </Link>
               </div>
             </div>

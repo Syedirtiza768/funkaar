@@ -49,10 +49,10 @@ export default function MobileOffcanvas({ openOffcanvas, setOpenOffcanvas }: IPr
               <h3 className="tp-offcanvas-title sm">Information</h3>
               <ul>
                 <li>
-                  <a href="tel:+1 771-777-4887" aria-label="Call us">+1 771-777-4887</a>
+                  <a href="tel:+1 771-232-9950" aria-label="Call us">+1 771-232-9950</a>
                 </li>
                 <li>
-                  <a href="mailto:info@funkaar.com" aria-label="Email us">info@funkaar.com</a>
+                  <a href="mailto:info@funkaar.co" aria-label="Email us">info@funkaar.co</a>
                 </li>
               </ul>
             </div>
