@@ -13,8 +13,8 @@ const PrivacyPolicy = () => {
         {company.brandName} is operated by <strong>{company.legalName}</strong>{" "}
         (&ldquo;{company.brandName},&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo;
         &ldquo;our&rdquo;). We are a creative content and marketing agency
-        offering video production, photography, and marketing and strategy
-        services. This policy explains what we collect when you visit{" "}
+        offering video production, photography, marketing and strategy, and
+        AI automation services. This policy explains what we collect when you visit{" "}
         <a href={company.website}>funkaar.co</a>, contact us, or work with us,
         and how we treat it.
       </p>
