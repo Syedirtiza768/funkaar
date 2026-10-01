@@ -1,4 +1,4 @@
-import PrivacyPolicy from "@/pages/legal/privacy-policy";
+import PrivacyPolicy from "@/components/legal-pages/privacy-policy";
 
 export const metadata = {
   title: "Funkaar - Privacy Policy",

@@ -1,4 +1,4 @@
-import BlogIndex from "@/pages/blog/blog-index";
+import BlogIndex from "@/components/blog-pages/blog-index";
 
 export const metadata = {
   title: "Funkaar - Blog",
