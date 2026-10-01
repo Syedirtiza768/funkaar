@@ -34,14 +34,14 @@ export default function HeaderEleven({ transparent = false, cls = '' }: IProps) 
                     <Image
                       src={transparent ? logo_2 : logo}
                       alt="logo"
-                      style={{ width: '140px', height: '90px' }} // Apply fixed size
+                      style={{ width: '150px', height: 'auto' }}
                     />
                   </Link>
                   <Link className={`${transparent ? 'ab-logo-2' : 'logo-2'}`} href="/">
                     <Image
                       src={transparent ? logo : logo_2}
                       alt="logo"
-                      style={{ width: '140px', height: '90px' }} // Apply fixed size
+                      style={{ width: '150px', height: 'auto' }}
                     />
                   </Link>
 

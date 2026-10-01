@@ -11,8 +11,8 @@ export const company = {
   brandName: "Funkaar",
   website: "https://funkaar.co",
   email: "info@funkaar.co",
-  phone: "+1 771-777-4887",
-  phoneHref: "+17717774887",
+  phone: "+1 771-232-9950",
+  phoneHref: "+17712329950",
   smsNumber: "TODO",
   address: "TODO",
   // Assumed from the owner's location. Confirm the state of formation.

@@ -24,18 +24,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
               <div className="tp-footer-2-widget footer-col-2-1">
                 {!whiteFooter && (
                   <Link href="/">
-                  <span
-                    style={{
-                      color: '#fff',
-                      fontSize: '36px',
-                      fontWeight: 'bold',
-                      fontFamily: "'Playfair Display', serif",
-                      letterSpacing: '-1px',
-                      display: 'inline-block',
-                    }}
-                  >
-                    Funkaar
-                  </span>
+                  <Image src={logo} alt="Funkaar" style={{ width: "180px", height: "auto" }} />
                 </Link>
                 )}
                 {whiteFooter && (
@@ -85,7 +74,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 </div> */}
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    {/* <a href="tel:+1 771-777-4887">P: +1 771-777-4887</a> */}
+                    {/* <a href="tel:+1 771-232-9950">P: +1 771-232-9950</a> */}
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
