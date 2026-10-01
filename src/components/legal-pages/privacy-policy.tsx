@@ -82,13 +82,14 @@ const PrivacyPolicy = () => {
         </p>
       </div>
 
-      <h2>4. Who can see your information</h2>
+      <h2>4. How we handle your information</h2>
       <p>
-        We do not sell your personal information. We use trusted service
-        providers, such as our email, hosting, scheduling, and messaging
-        platforms, only so they can help us run the business, and they may use
-        your information only for that purpose. We may also disclose information
-        if the law requires it or to protect our rights.
+        We do not sell, rent, or trade your personal information, and we do not
+        share it with affiliates or third parties for marketing or promotional
+        purposes. The tools we use to run the business, such as our email,
+        hosting, scheduling, and messaging platforms, process information only
+        on our behalf and only to support our work with you. We release
+        information only when the law requires it.
       </p>
 
       <h2>5. Cookies</h2>

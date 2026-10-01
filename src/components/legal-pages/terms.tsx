@@ -51,8 +51,11 @@ const Terms = () => {
           optional and is not a condition of purchase.
         </li>
         <li>
-          <strong>Opt out:</strong> Reply <strong>STOP</strong> to {sms} at any
-          time. We will confirm, and you will receive no further texts.
+          <strong>Opt out:</strong> You can cancel the SMS service at any time.
+          Just text <strong>STOP</strong> to {sms}. After you send STOP, we will
+          send you a text to confirm you have been unsubscribed, and you will no
+          longer receive texts from us. To join again, sign up as you did the
+          first time and we will start sending texts again.
         </li>
         <li>
           <strong>Help:</strong> Reply <strong>HELP</strong> to {sms}, or email{" "}
