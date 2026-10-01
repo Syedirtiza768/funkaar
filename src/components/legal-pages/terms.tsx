@@ -20,7 +20,8 @@ const Terms = () => {
       <h2>1. Our services</h2>
       <p>
         {company.brandName} is a creative content and marketing agency: video
-        production, photography, and marketing and strategy. Scope, pricing, and
+        production, photography, marketing and strategy, and AI automation
+        solutions for businesses. Scope, pricing, and
         timelines for each project are set out in a separate proposal or
         agreement, which controls if it conflicts with these terms.
       </p>
@@ -42,7 +43,8 @@ const Terms = () => {
       <p>
         <strong>Program:</strong> {company.legalName}, doing business as{" "}
         {company.brandName}, sends text messages about appointment reminders, scheduling reminders,
-        consultation bookings, and customer support inquiries. If you separately opt in, we may also send marketing and promotional messages.
+        consultation bookings, and customer support inquiries for all of our
+        services, including our AI automation services. If you separately opt in, we may also send marketing and promotional messages.
       </p>
       <ul>
         <li>
