@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import BlogPost from "@/pages/blog/blog-post";
+import BlogPost from "@/components/blog-pages/blog-post";
 import { posts } from "@/data/posts";
 
 export const dynamicParams = false;

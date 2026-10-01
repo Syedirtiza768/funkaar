@@ -1,4 +1,4 @@
-import Terms from "@/pages/legal/terms";
+import Terms from "@/components/legal-pages/terms";
 
 export const metadata = {
   title: "Funkaar - Terms & Conditions",
