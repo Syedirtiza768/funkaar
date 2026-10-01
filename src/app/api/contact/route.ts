@@ -95,9 +95,9 @@ export async function POST(req: Request) {
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
-        <p><strong>Organization:</strong> ${organization}</p>
-        <p><strong>Website:</strong> ${website}</p>
-        <p><strong>Message:</strong> ${message}</p>
+        <p><strong>Organization:</strong> ${organization || "Not provided"}</p>
+        <p><strong>Website:</strong> ${website || "Not provided"}</p>
+        <p><strong>Message:</strong> ${message || "Not provided"}</p>
         <p><strong>Project Type:</strong> ${projectType}</p>
         <p><strong>Referral Source:</strong> ${referralSource}</p>
         <p><strong>Non-marketing text consent:</strong> ${consentGiven ? "Yes" : "No"}</p>
