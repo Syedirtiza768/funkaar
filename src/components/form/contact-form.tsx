@@ -19,6 +19,7 @@ type FormData = {
   projectType?: string;
   referralSource: string;
   smsConsent?: boolean;
+  marketingConsent?: boolean;
 };
 
 // Validation schema using Yup
@@ -32,6 +33,7 @@ const schema = yup.object().shape({
   projectType: yup.string().optional(),
   referralSource: yup.string().required('This field is required'),
   smsConsent: yup.boolean().optional(),
+  marketingConsent: yup.boolean().optional(),
 });
 
 // prop type
@@ -191,13 +193,33 @@ export default function ContactForm({ btnCls = '' }: IProps) {
             style={{ marginTop: 5, width: 18, height: 18, flexShrink: 0 }}
           />
           <span>
-            I consent to receive non-marketing text messages from FUNKAAR LLC about appointment
-            reminders, consultation bookings, and customer support inquiries. Message frequency may
-            vary, message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.
-            Consent is not a condition of purchase. See our{' '}
+            By checking this box, I consent to receive non-marketing text messages from{' '}
+            <strong>FUNKAAR LLC</strong> about{' '}
+            <strong>
+              appointment reminders, consultation bookings, scheduling reminders and customer
+              support inquiries
+            </strong>
+            . Message frequency varies, message &amp; data rates may apply. Text HELP for
+            assistance, reply STOP to opt out. See our{' '}
             <Link href="/privacy-policy" style={{ textDecoration: 'underline' }}>Privacy Policy</Link>{' '}
             and{' '}
             <Link href="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms &amp; Conditions</Link>.
+          </span>
+        </label>
+      </div>
+
+      <div className="cn-contactform-input mb-25">
+        <label className="text-white" style={{ display: 'flex', gap: 12, alignItems: 'flex-start', fontSize: 14, lineHeight: 1.6, cursor: 'pointer' }}>
+          <input
+            {...register('marketingConsent')}
+            type="checkbox"
+            style={{ marginTop: 5, width: 18, height: 18, flexShrink: 0 }}
+          />
+          <span>
+            By checking this box, I consent to receive marketing and promotional messages
+            including special offers, discounts, new product updates among others, from{' '}
+            <strong>FUNKAAR LLC</strong> at the phone number provided. Frequency may vary.
+            Message &amp; data rates may apply. Text HELP for assistance, reply STOP to opt out.
           </span>
         </label>
       </div>

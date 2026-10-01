@@ -15,9 +15,11 @@ export async function POST(req: Request) {
       projectType,
       referralSource,
       smsConsent,
+      marketingConsent,
     } = body;
 
     const consentGiven = smsConsent === true;
+    const marketingGiven = marketingConsent === true;
 
     // 1) Send the lead to GoHighLevel (Inbound Webhook), if configured.
     let sentToGhl = false;
@@ -40,8 +42,9 @@ export async function POST(req: Request) {
             project_type: projectType,
             referral_source: referralSource,
             non_marketing_sms_consent: consentGiven ? 'Yes' : 'No',
-            sms_consent_text: consentGiven ? 'Opted in via funkaar.co contact form' : '',
-            consent_timestamp: consentGiven ? new Date().toISOString() : '',
+            marketing_sms_consent: marketingGiven ? 'Yes' : 'No',
+            sms_consent_text: (consentGiven || marketingGiven) ? 'Opted in via funkaar.co contact form' : '',
+            consent_timestamp: (consentGiven || marketingGiven) ? new Date().toISOString() : '',
             source: 'funkaar.co contact form',
           }),
         });
@@ -97,7 +100,8 @@ export async function POST(req: Request) {
         <p><strong>Message:</strong> ${message}</p>
         <p><strong>Project Type:</strong> ${projectType}</p>
         <p><strong>Referral Source:</strong> ${referralSource}</p>
-        <p><strong>Text message consent:</strong> ${consentGiven ? "Yes" : "No"}</p>
+        <p><strong>Non-marketing text consent:</strong> ${consentGiven ? "Yes" : "No"}</p>
+        <p><strong>Marketing text consent:</strong> ${marketingGiven ? "Yes" : "No"}</p>
       `,
     };
 
