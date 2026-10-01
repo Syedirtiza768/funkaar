@@ -41,8 +41,8 @@ const Terms = () => {
       <h2>3. SMS terms</h2>
       <p>
         <strong>Program:</strong> {company.legalName}, doing business as{" "}
-        {company.brandName}, sends text messages about appointment reminders,
-        consultation bookings, and customer support inquiries.
+        {company.brandName}, sends text messages about appointment reminders, scheduling reminders,
+        consultation bookings, and customer support inquiries. If you separately opt in, we may also send marketing and promotional messages.
       </p>
       <ul>
         <li>

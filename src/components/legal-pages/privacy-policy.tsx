@@ -59,7 +59,7 @@ const PrivacyPolicy = () => {
       <p>
         If you give us your mobile number and agree to receive texts, we use it
         for appointment reminders, consultation bookings, and customer support
-        conversations. Consent to receive text messages is optional and is not
+        conversations, and, only if you separately opt in, marketing and promotional messages. Consent to receive text messages is optional and is not
         a condition of buying any service from us. You can opt out at any time
         by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for
         help. Message frequency varies, and message and data rates may apply.
