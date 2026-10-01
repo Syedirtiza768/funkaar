@@ -13,9 +13,9 @@ type FormData = {
   name: string;
   email: string;
   phone?: string;
-  organization: string;
+  organization?: string;
   website?: string;
-  message: string;
+  message?: string;
   projectType?: string;
   referralSource: string;
   smsConsent?: boolean;
@@ -27,9 +27,9 @@ const schema = yup.object().shape({
   name: yup.string().required('Name is required'),
   email: yup.string().email('Invalid email').required('Email is required'),
   phone: yup.string().optional(),
-  organization: yup.string().required('Organization is required'),
+  organization: yup.string().optional(),
   website: yup.string().optional(),
-  message: yup.string().required('Message is required'),
+  message: yup.string().optional(),
   projectType: yup.string().optional(),
   referralSource: yup.string().required('This field is required'),
   smsConsent: yup.boolean().optional(),
@@ -110,7 +110,7 @@ export default function ContactForm({ btnCls = '' }: IProps) {
 
       {/* Organization */}
       <div className="cn-contactform-input mb-25">
-        <label className='text-white mb-2'>Organization*</label>
+        <label className='text-white mb-2'>Organization</label>
         <input
           {...register('organization')}
           type="text"
@@ -134,7 +134,7 @@ export default function ContactForm({ btnCls = '' }: IProps) {
 
       {/* Message */}
       <div className="cn-contactform-input mb-25">
-        <label className='text-white mb-2'>Tell Us About Your Project*</label>
+        <label className='text-white mb-2'>Tell Us About Your Project</label>
         <textarea
           {...register('message')}
           placeholder="Give us the big picture."
