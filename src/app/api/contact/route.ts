@@ -52,7 +52,7 @@ export async function POST(req: Request) {
       html: `
         <p><strong>Name:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Phone:</strong> ${phone}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
         <p><strong>Organization:</strong> ${organization}</p>
         <p><strong>Website:</strong> ${website}</p>
         <p><strong>Message:</strong> ${message}</p>
