@@ -14,7 +14,43 @@ export async function POST(req: Request) {
       message,
       projectType,
       referralSource,
+      smsConsent,
     } = body;
+
+    const consentGiven = smsConsent === true;
+
+    // 1) Send the lead to GoHighLevel (Inbound Webhook), if configured.
+    let sentToGhl = false;
+    const { GHL_WEBHOOK_URL } = process.env;
+    if (GHL_WEBHOOK_URL) {
+      try {
+        const [firstName, ...rest] = String(name || '').trim().split(' ');
+        const ghlRes = await fetch(GHL_WEBHOOK_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            first_name: firstName,
+            last_name: rest.join(' '),
+            name,
+            email,
+            phone: phone || '',
+            company_name: organization,
+            website,
+            message,
+            project_type: projectType,
+            referral_source: referralSource,
+            non_marketing_sms_consent: consentGiven ? 'Yes' : 'No',
+            sms_consent_text: consentGiven ? 'Opted in via funkaar.co contact form' : '',
+            consent_timestamp: consentGiven ? new Date().toISOString() : '',
+            source: 'funkaar.co contact form',
+          }),
+        });
+        sentToGhl = ghlRes.ok;
+        if (!ghlRes.ok) console.error('GHL webhook failed:', ghlRes.status);
+      } catch (e: any) {
+        console.error('GHL webhook error:', e.message);
+      }
+    }
 
     const {
       EMAIL_HOST,
@@ -32,6 +68,9 @@ export async function POST(req: Request) {
         EMAIL_PASS,
         TO_EMAIL,
       });
+      if (sentToGhl) {
+        return NextResponse.json({ success: true, message: "Lead sent" });
+      }
       throw new Error("Missing required environment variables");
     }
 
@@ -58,6 +97,7 @@ export async function POST(req: Request) {
         <p><strong>Message:</strong> ${message}</p>
         <p><strong>Project Type:</strong> ${projectType}</p>
         <p><strong>Referral Source:</strong> ${referralSource}</p>
+        <p><strong>Text message consent:</strong> ${consentGiven ? "Yes" : "No"}</p>
       `,
     };
 
