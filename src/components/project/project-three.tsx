@@ -25,7 +25,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos//Oppo-F17 PRO.mp4" type="video/mp4" />
                 </video>
-                <SoundButton />
+                <SoundButton middle right={20} />
               </div>
             </div>
 
@@ -42,7 +42,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/Oppo-DVC.mp4" type="video/mp4" />
                 </video>
-                <SoundButton />
+                <SoundButton middle right={20} />
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/abacus.mp4" type="video/mp4" />
                 </video>
-                <SoundButton />
+                <SoundButton middle right={20} />
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/Nilofer Shahid.mp4" type="video/mp4" />
                 </video>
-                <SoundButton />
+                <SoundButton middle right={20} />
               </div>
             </div>
           </div>

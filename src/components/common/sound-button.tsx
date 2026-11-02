@@ -8,7 +8,15 @@ import React, { useEffect, useRef, useState } from "react";
  */
 const EVENT = "funkaar-video-sound";
 
-const SoundButton = ({ bottom = 14, right = 14 }: { bottom?: number; right?: number }) => {
+const SoundButton = ({
+  bottom = 14,
+  right = 14,
+  middle = false,
+}: {
+  bottom?: number;
+  right?: number;
+  middle?: boolean;
+}) => {
   const ref = useRef<HTMLButtonElement>(null);
   const [on, setOn] = useState(false);
 
@@ -50,7 +58,9 @@ const SoundButton = ({ bottom = 14, right = 14 }: { bottom?: number; right?: num
       style={{
         position: "absolute",
         right,
-        bottom,
+        ...(middle
+          ? { top: "50%", transform: "translateY(-50%)" }
+          : { bottom }),
         zIndex: 5,
         width: 42,
         height: 42,
