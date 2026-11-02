@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import ClickToPlayVideo from "@/components/ClickToPlayVideo";
+import SoundButton from "@/components/common/sound-button";
 
 export default function ProjectThree() {
   return (
@@ -24,6 +25,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos//Oppo-F17 PRO.mp4" type="video/mp4" />
                 </video>
+                <SoundButton />
               </div>
             </div>
 
@@ -40,6 +42,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/Oppo-DVC.mp4" type="video/mp4" />
                 </video>
+                <SoundButton />
               </div>
             </div>
 
@@ -56,6 +59,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/abacus.mp4" type="video/mp4" />
                 </video>
+                <SoundButton />
               </div>
             </div>
 
@@ -72,6 +76,7 @@ export default function ProjectThree() {
                 >
                   <source src="/assets/img/videos/Nilofer Shahid.mp4" type="video/mp4" />
                 </video>
+                <SoundButton />
               </div>
             </div>
           </div>
