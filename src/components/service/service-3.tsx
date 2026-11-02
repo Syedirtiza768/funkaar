@@ -1,4 +1,5 @@
 import React from "react";
+import SoundButton from "@/components/common/sound-button";
 
 const ServiceOne = () => {
   return (
@@ -39,7 +40,7 @@ const ServiceOne = () => {
 
           {/* Right Column */}
           <div className="col-xl-6 col-lg-6">
-            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden', position: 'relative' }}>
               <video
                 loop
                 muted
@@ -54,6 +55,7 @@ const ServiceOne = () => {
               >
                 <source src="/assets/img/videos/Oppo-DVC.mp4" type="video/mp4" />
               </video>
+              <SoundButton />
 
             </div>
           </div>

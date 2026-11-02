@@ -13,6 +13,7 @@ import p_6 from "@/assets/img/inner-about/about/about-6.jpeg";
 import p_7 from "@/assets/img/inner-about/about/about-9.jpeg";
 import p_8 from "@/assets/img/inner-about/about/about-10.jpg";
 import p_9 from "@/assets/img/inner-about/about/about-11.jpg";
+import SoundButton from "@/components/common/sound-button";
 
 // type
 type IProject = {
@@ -100,7 +101,7 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
           </div>
 
           <div className="col-xl-12 col-lg-12">
-            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden', position: 'relative' }}>
               <video
                 loop
                 muted
@@ -115,6 +116,7 @@ const ProjectOne = ({ style_2 = false }: IProps) => {
               >
                 <source src="/assets/img/videos/Rohma.mp4" type="video/mp4" />
               </video>
+              <SoundButton />
             </div>
           </div>
 

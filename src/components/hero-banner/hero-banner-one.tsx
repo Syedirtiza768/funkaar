@@ -3,6 +3,7 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import { fadeAnimation } from "@/utils/title-animation";
 import AutoLazy from "@/components/LazyVideo";
+import SoundButton from "@/components/common/sound-button";
 
 
 const HeroBannerOne = () => {
@@ -58,6 +59,8 @@ const HeroBannerOne = () => {
           }}
         />
       </div>
+
+      <SoundButton bottom={24} right={24} />
 
       {/* ✅ Centered Text Content */}
       <div

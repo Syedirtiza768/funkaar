@@ -8,6 +8,7 @@ import s_1 from "@/assets/img/home-01/service/service-icon-1.png";
 import s_2 from "@/assets/img/home-01/service/service-icon-2.png";
 import s_3 from "@/assets/img/home-01/service/service-icon-3.png";
 import s_4 from "@/assets/img/home-01/service/service-icon-4.png";
+import SoundButton from "@/components/common/sound-button";
 
 // service data
 const service_data = [
@@ -60,7 +61,7 @@ const ServiceOne = () => {
 
           {/* Right Column */}
           <div className="col-xl-6 col-lg-6">
-            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <div className="tp-hero-bottom-img" style={{ width: '100%', height: '100%', overflow: 'hidden', position: 'relative' }}>
               <video
                 loop
                 muted
@@ -75,6 +76,7 @@ const ServiceOne = () => {
               >
                 <source src="/assets/img/home-01/hero/port-3_cygauz.mp4" type="video/mp4" />
               </video>
+              <SoundButton />
 
             </div>
           </div>

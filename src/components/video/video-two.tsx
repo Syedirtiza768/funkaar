@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import { Leaf } from "../svg";
+import SoundButton from "@/components/common/sound-button";
 
 const VideoTwo = () => {
 
@@ -22,6 +23,7 @@ const VideoTwo = () => {
                   type="video/mp4"
                 />
               </video>
+              <SoundButton />
               <div className="tp-video-content text-center">
                 <h2 className="tp-video-title">Let’s Create Something Extraordinary</h2>
                 <p className="text-white mt-2">

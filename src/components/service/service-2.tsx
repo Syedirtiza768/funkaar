@@ -1,4 +1,5 @@
 import React from "react";
+import SoundButton from "@/components/common/sound-button";
 
 const ServiceOne: React.FC = () => {
   return (
@@ -33,6 +34,7 @@ const ServiceOne: React.FC = () => {
                 width: "100%",
                 height: "100%",
                 overflow: "hidden",
+                position: "relative",
                 borderRadius: "8px",
               }}
             >
@@ -50,6 +52,7 @@ const ServiceOne: React.FC = () => {
               >
                 <source src="/assets/img/videos/port-7.mp4" type="video/mp4" />
               </video>
+              <SoundButton />
             </div>
           </div>
 
