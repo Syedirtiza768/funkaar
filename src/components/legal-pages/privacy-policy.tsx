@@ -20,25 +20,35 @@ const PrivacyPolicy = () => {
       </p>
 
       <h2>1. Information we collect</h2>
-      <p>We collect only what we need to respond to you and do the work.</p>
+      <p>
+        We collect only what we need to respond to you and do the work. The
+        information we collect, and how we collect it, falls into these
+        groups:
+      </p>
       <ul>
         <li>
-          <strong>Details you give us:</strong> name, email address, phone
-          number, organization, website, project details, and how you heard
-          about us, when you fill in our contact form or write to us.
+          <strong>Contact details you give us:</strong> your name, email
+          address, mobile or other phone number, organization, and website,
+          when you fill in our contact form, book a consultation, call or text
+          us, or write to us.
+        </li>
+        <li>
+          <strong>Project and enquiry details:</strong> what you tell us about
+          your project, your goals, and how you heard about us.
         </li>
         <li>
           <strong>Project materials:</strong> briefs, brand assets, footage,
-          and files you share while we work together.
+          and files you send us while we work together.
         </li>
         <li>
           <strong>Messages:</strong> the content of emails and text messages
-          between you and us.
+          between you and us, and your text message consent choices (what you
+          agreed to, and when).
         </li>
         <li>
           <strong>Basic technical data:</strong> browser type, device, pages
-          visited, and IP address, collected through standard server logs and
-          cookies needed to run the site.
+          visited, and IP address, collected automatically through standard
+          server logs and cookies needed to run the site.
         </li>
       </ul>
 
@@ -57,14 +67,34 @@ const PrivacyPolicy = () => {
 
       <h2>3. Text messaging (SMS)</h2>
       <p>
-        If you give us your mobile number and agree to receive texts, we use it
-        for appointment reminders, consultation bookings, and customer support
-        conversations, and, only if you separately opt in, marketing and promotional messages. Consent to receive text messages is optional and is not
-        a condition of buying any service from us. You can opt out at any time
-        by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for
-        help. Message frequency varies, and message and data rates may apply.
-        See our <Link href="/terms-and-conditions">Terms &amp; Conditions</Link>{" "}
-        for full messaging terms.
+        <strong>How you opt in.</strong> You opt in to text messages only by
+        ticking an unchecked consent box next to the phone number field on our
+        contact form, or by otherwise agreeing to receive texts from us. There
+        are two separate, optional boxes: one for non-marketing messages and
+        one for marketing and promotional messages. Neither box is required to
+        submit the form or to buy any service from us.
+      </p>
+      <p>
+        <strong>What we send.</strong> If you opt in to non-marketing texts, we
+        use your mobile number for appointment reminders, consultation
+        bookings, scheduling reminders, and customer support conversations,
+        including related to our AI automation services. Only if you separately
+        opt in to the marketing box do we also send marketing and promotional
+        messages.
+      </p>
+      <p>
+        <strong>How often.</strong> Message frequency varies depending on your
+        activity with us (for example, the appointments you book and the
+        questions you ask). Message and data rates may apply.
+      </p>
+      <p>
+        <strong>How to opt out or get help.</strong> You can opt out at any time
+        by replying <strong>STOP</strong>. Reply <strong>HELP</strong> for help,
+        or contact us at <a href={`mailto:${company.email}`}>{company.email}</a>.
+        Consent to receive text messages is optional and is not a condition of
+        buying any service from us. See our{" "}
+        <Link href="/terms-and-conditions">Terms &amp; Conditions</Link> for
+        full messaging terms.
       </p>
       <div className={"callout"} style={{ borderLeft: "3px solid rgba(255,255,255,.5)", paddingLeft: 20 }}>
         <p>
@@ -107,9 +137,28 @@ const PrivacyPolicy = () => {
 
       <h2>7. Security</h2>
       <p>
-        We use reasonable technical and organizational safeguards. No method of
-        transmission or storage is completely secure, so we cannot promise
-        absolute security.
+        We take reasonable steps to protect your information, including:
+      </p>
+      <ul>
+        <li>This website is served over an encrypted (HTTPS) connection.</li>
+        <li>
+          Information is stored in business platforms (email, hosting,
+          scheduling, and messaging tools) that require a login, and access is
+          limited to people who need it to serve you.
+        </li>
+        <li>
+          We collect only the information we need and delete or anonymize it
+          when we no longer need it (see section 6).
+        </li>
+        <li>
+          Text message opt-in data and consent are kept as described in
+          section 3 and are not shared with third parties.
+        </li>
+      </ul>
+      <p>
+        No method of transmission or storage is completely secure, so we cannot
+        promise absolute security. If you believe your information has been
+        compromised, please contact us right away.
       </p>
 
       <h2>8. Your choices</h2>

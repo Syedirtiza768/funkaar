@@ -26,7 +26,7 @@ const project_data = [
   },
   {
     id: 3,
-    title: "Oppo-DVC",
+    title: "Oppo",
     category: "Branding",
     video: "/assets/img/videos/Oppo-DVC.mp4",
     img: "p_img_2",
@@ -34,7 +34,7 @@ const project_data = [
   },
   {
     id: 4,
-    title: "Oppo-F17 PRO",
+    title: "Oppo",
     category: "Branding",
     video: "/assets/img/videos/Oppo-F17 PRO.mp4", 
     img: "p_img_2",
@@ -50,14 +50,6 @@ const project_data = [
   },
   {
     id: 6,
-    title: "Nilofer Shahid",
-    category: "Concept",
-    video: "/assets/img/videos/Rohma.mp4",
-    img: "p_img_2",
-    year: 2024,
-  },
-  {
-    id: 7,
     title: "Yamaha",
     category: "Branding",
     video: "/assets/img/videos/yamaha.mp4",
@@ -65,7 +57,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 8,
+    id: 7,
     title: "Swyft",
     category: "Branding",
     video: "/assets/img/videos/Swyft.mp4",
@@ -73,31 +65,31 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 9,
-    title: "SOS Childrens Villages 2018",
+    id: 8,
+    title: "SOS Children's Villages",
     category: "Branding",
     video: "/assets/img/videos/SOS.mp4",
     img: "p_img_2",
     year: 2024,
   },
   {
-    id: 10,
-    title: "Seedout DVC",
+    id: 9,
+    title: "Seed Out",
     category: "Branding",
     video: "/assets/img/videos/seed_out.mp4",
     img: "p_img_2",
     year: 2024,
   },
   {
-    id: 11,
-    title: "Oppo - Corporate Profile IOT devices",
+    id: 10,
+    title: "Oppo",
     category: "Branding",
     video: "/assets/img/videos/Oppo - Corporate.mp4",
     img: "p_img_2",
     year: 2024,
   },
   {
-    id: 12,
+    id: 11,
     title: "Monsanto",
     category: "Branding",
     video: "/assets/img/videos/monsanto.mp4",
@@ -105,7 +97,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 13,
+    id: 12,
     title: "Karandaaz",
     category: "Branding",
     video: "/assets/img/videos/karandaaz.mp4",
@@ -113,7 +105,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 14,
+    id: 13,
     title: "Human Capital Index Pakistan",
     category: "Branding",
     video: "/assets/img/videos/human.mp4",
@@ -121,15 +113,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 15,
-    title: "Hairoil-4th JUly-ishq_mobile",
-    category: "Branding",
-    video: "/assets/img/videos/hairoil.mp4",
-    img: "p_img_2",
-    year: 2024,
-  },
-  {
-    id: 16,
+    id: 14,
     title: "ADB (Asian Development Bank)",
     category: "Branding",
     video: "/assets/img/videos/adb.mp4",
@@ -137,7 +121,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 17,
+    id: 15,
     title: "GreenBrilliance",
     category: "Branding",
     video: "/assets/img/home-01/hero/port-3_cygauz.mp4",
@@ -145,7 +129,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 18,
+    id: 16,
     title: "Lums",
     category: "Branding",
     video: "/assets/img/videos/lums.mp4",
@@ -153,15 +137,7 @@ const project_data = [
     year: 2024,
   },
   {
-    id: 19,
-    title: "Seed Out documentary",
-    category: "Branding",
-    video: "/assets/img/videos/seed_out.mp4",
-    img: "p_img_2",
-    year: 2024,
-  },
-  {
-    id: 20,
+    id: 17,
     title: "Select & Airlink",
     category: "Branding",
     video: "/assets/img/videos/Select.mp4",
@@ -175,7 +151,7 @@ const project_data = [
 // };
 
 
-const ITEMS_PER_PAGE = 4;
+const ITEMS_PER_PAGE = 6;
 
 type Project = {
   id: number;
