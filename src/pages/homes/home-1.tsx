@@ -55,7 +55,7 @@ const HomeMain = () => {
 
   useGSAP(() => {
     const timer = setTimeout(() => {
-      videoAnimOne();
+      // videoAnimOne(); // disabled: pinned the logo strip so the next section overlapped it
       // portfolio image wrap
       gsap.timeline({
         scrollTrigger: {
